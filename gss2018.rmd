@@ -82,10 +82,15 @@ The numerical results show there may be a relationship between the opinion on th
 ```{r}
 chisq.test(table1)
 chisqtestGC(table1)
+```
+
+Our p-value is .0202. This means the probability of getting a sample like this under conditions when the null hypothesis is true is about 2%. Our p-value is lower than our threshold of belief which is .05 (five percent). Since the p-valuye is less than .05, we reject the null hypothesis and conclude that there is relationship between the opinion on the death penalty and gun ownership.
+
+```{r}
 fisher.test(table1)
 ```
 
-Given the null hypothesis is true 2% of the time, we reject the null hypothesis. There seems to be a relationship between the opinion on the death penalty and gun ownership. From all the results we got from the data, we can conclude that those who own guns are more likely to be in favor of the death penalty.  
+Our p-value is .01651. This means the probability of getting a sample like this under conditions when the null hypothesis is true is about 2%. Our p-value is lower than our threshold of belief which is .05 (five percent). Since the p-valuye is less than .05, we reject the null hypothesis and conclude that there is relationship between the opinion on the death penalty and gun ownership.
 
 # Introduction Question 2
 
@@ -137,11 +142,15 @@ The numerical results suggest that there is no relationship between the belief i
 ```{r}
 chisq.test(table1)
 chisqtestGC(table1)
+```
+
+Our p-value is .0801. This means the probability of getting a sample like this under conditions when the null hypothesis is true is about 8%. Our p-value is greater than our threshold of belief which is .05 (five percent). Since the p-value is greater than .05, we fail to reject the null hypothesis and conclude that there is no relationship between the belief in the bigbang theory and the belief in the afterlife.
+
+```{r}
 fisher.test(table1)
 ```
 
-Given that the null hypothesis is true 8% of the time, we fail to reject the null hypothesis. The results above show that there is no relationship between the belief in the bigbang theory and the belief in the afterlife. 
-
+Our p-value is .07143. This means the probability of getting a sample like this under conditions when the null hypothesis is true is about 7%. Our p-value is greater than our threshold of belief which is .05 (five percent). Since the p-value is greater than .05, we fail to reject the null hypothesis and conclude that there is no relationship between the belief in the bigbang theory and the belief in the afterlife.
 
 # Introduction Question 3
 
@@ -194,12 +203,16 @@ chisq.test(table1)
 chisqtestGC(table1)
 ```
 
-Given the null hypothesis is true less than 5% of the time, we reject the null hypothesis. The results show that there is a relationship between a person's opinion on the death penalty and their race. It seems that black people are more likely to oppose the death penalty than that of the other races.
-
+Our p-value is 9e-04. This means the probability of getting a sample like this under conditions when the null hypothesis is true is about 0%. Our p-value is less than our threshold of belief which is .05 (five percent). Since the p-valuye is less than .05, we reject the null hypothesis and conclude that there is relationship between is a relationship between a person's opinion on the death penalty and their race. 
 
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
-For question one, given that the null hypothesis is true 2% of the time, we reject the null hypothesis. From the evidence gathered on question one, we can conclude that there is a relationship between the opinion of the death penalty and gun ownership. Those who own guns are more likely to be in favor of the death penalty. On question two, given that the null hypothesis is true 8% of the time, we fail to reject the null hypothesis. From the evidence gathered on question two, we can conclude that there is no relationship between the belief in the bigbang theory and the belief in the afterlife. For question three, given that the null hypothesis was true less than 5% of the time, we reject the null hypothesis. From the evidence gathered on question three, we can conclude that there is a relationship between a person's opinion on the death penalty and their race. It seems that black people are more likely to oppose the death penalty than that of the other races.
+For question one, our p-value is .0202. This means the probability of getting a sample like this under conditions when the null hypothesis is true is about 2%. Our p-value is lower than our threshold of belief which is .05 (five percent). Since the p-valuye is less than .05, we reject the null hypothesis and conclude that there is relationship between the opinion on the death penalty and gun ownership.
+
+For question two, our p-value is .0801. This means the probability of getting a sample like this under conditions when the null hypothesis is true is about 8%. Our p-value is greater than our threshold of belief which is .05 (five percent). Since the p-value is greater than .05, we fail to reject the null hypothesis and conclude that there is no relationship between the belief in the bigbang theory and the belief in the afterlife.
+
+For question three, our p-value is 9e-04. This means the probability of getting a sample like this under conditions when the null hypothesis is true is about 0%. Our p-value is less than our threshold of belief which is .05 (five percent). Since the p-valuye is less than .05, we reject the null hypothesis and conclude that there is relationship between is a relationship between a person's opinion on the death penalty and their race. 
+
  
 
